@@ -1,0 +1,43 @@
+{
+  "name": "generator-ugrunt",
+  "version": "0.0.1",
+  "description": "Generates some basics Grunt related stuff for a fresch Umbraco installation",
+  "keywords": [
+    "Umbraco",
+    "usemin",
+    "boilerplate"
+  ],
+  "homepage": "https://github.com/Benjaminsson/generator-ugrunt",
+  "bugs": "https://github.com/Benjaminsson/generator-ugrunt/issues",
+  "author": {
+    "name": "Johan Benjaminsson",
+    "email": "johan.benjaminsson@gmail.com",
+    "url": "https://github.com/Benjaminsson"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Benjaminsson/generator-ugrunt.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.14.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.14.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}

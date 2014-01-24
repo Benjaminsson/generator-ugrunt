@@ -1,0 +1,14 @@
+# use glob syntax
+syntax: glob
+
+node_modules
+*.log
+intermediate
+publish
+deploy
+SLASK
+App_Data/TEMP
+App_Data/Logs
+.tmp
+temp
+[Tt]humbs.db

@@ -1,0 +1,10 @@
+{
+  "name": "<%= _.slugify(siteName) %>",
+  "version": "0.0.0",
+  "dependencies": {
+  	<% if(jqueryVersion == 'jquery1') { %>
+    "jquery": "~1.10.2"<% } %><% if(jqueryVersion == 'jquery2') { %>
+    "jquery": "~2.0.3"<% } %><% if (includeNormalize) { %>,
+	"normalize-css": "~2.1.3"<% } %>
+  }
+}
