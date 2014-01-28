@@ -27,8 +27,8 @@ module.exports = function (grunt) {
     },
 
     clean: {
-      all: ['<%=meta.deployPath%>/*'],
-      main: ['<%=meta.deployPath%>/css/*', '<%=meta.deployPath%>/scripts/*', '<%=meta.deployPath%>/masterpages/*', '<%=meta.deployPath%>/xslt/*']
+      all: ['<%%=meta.deployPath%>/*'],
+      main: ['<%%=meta.deployPath%>/css/*', '<%%=meta.deployPath%>/scripts/*', '<%%=meta.deployPath%>/masterpages/*', '<%%=meta.deployPath%>/xslt/*']
     },
 
     copy: { // UseminPrepare copies over scripts and css.
@@ -59,7 +59,7 @@ module.exports = function (grunt) {
           'web.config',
           '*.png'
         ],
-        dest: '<%= meta.deployPath%>'
+        dest: '<%%=meta.deployPath%>'
       },
       main: {
         files: [ {
@@ -70,7 +70,7 @@ module.exports = function (grunt) {
               'xslt/**',
               'img/**'
             ],
-            dest: '<%= meta.deployPath%>'
+            dest: '<%%=meta.deployPath%>'
         }]
       }
     },
@@ -78,26 +78,26 @@ module.exports = function (grunt) {
     useminPrepare: {
       options: {
         root: '.', // We do not want Grunt to have "masterpages" as root path
-        dest: '<%= meta.deployPath %>' // Root of deployPath
+        dest: '<%%=meta.deployPath%>' // Root of deployPath
       },
       html: ['masterpages/*']
     },
 
     usemin: {
         options: {
-            assetsDirs: ['<%= meta.deployPath %>']
+            assetsDirs: ['<%%=meta.deployPath%>']
         }, 
-        html: ['<%= meta.deployPath %>/masterpages/*'],
-        css: ['<%= meta.deployPath %>/css/{,*/}*.css']
+        html: ['<%%=meta.deployPath%>/masterpages/*'],
+        css: ['<%%=meta.deployPath%>/css/{,*/}*.css']
     },
 
     modernizr: {
         devFile: 'bower_components/modernizr/modernizr.js',
-        outputFile: '<%= meta.deployPath %>/bower_components/modernizr/modernizr.js',
+        outputFile: '<%%=meta.deployPath%>/bower_components/modernizr/modernizr.js',
         files: [
-            '<%= meta.deployPath %>/scripts/{,*/}*.js',
-            '<%= meta.deployPath %>/styles/{,*/}*.css',
-            '!<%= meta.deployPath %>/scripts/vendor/*'
+            '<%%=meta.deployPath%>/scripts/{,*/}*.js',
+            '<%%=meta.deployPath%>/styles/{,*/}*.css',
+            '!<%%=meta.deployPath%>/scripts/vendor/*'
         ],
         uglify: true
     },
@@ -106,10 +106,10 @@ module.exports = function (grunt) {
         dist: {
             files: {
                 src: [
-                    '<%= meta.deployPath %>/scripts/{,*/}*.js',
-                    '<%= meta.deployPath %>/css/{,*/}*.css',
-                    '<%= meta.deployPath %>/img/{,*/}*.{gif,jpeg,jpg,png,webp}',
-                    '<%= meta.deployPath %>/css/fonts/{,*/}*.*'
+                    '<%%=meta.deployPath%>/scripts/{,*/}*.js',
+                    '<%%=meta.deployPath%>/css/{,*/}*.css',
+                    '<%%=meta.deployPath%>/img/{,*/}*.{gif,jpeg,jpg,png,webp}',
+                    '<%%=meta.deployPath%>/css/fonts/{,*/}*.*'
                 ]
             }
         }

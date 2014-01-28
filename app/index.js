@@ -32,6 +32,11 @@ UgruntGenerator.prototype.askFor = function askFor() {
     message: 'What is the name of your Umbraco site?'
   },
   {
+    name: 'masterpageName',
+    message: 'What do you want to call the boilerplate masterpage?',
+    default: 'ugrunt_boilerplate'
+  },
+  {
     type: 'list',
     name: 'ignoreFileChoice',
     message: 'Would you like to include an ignore file?',
@@ -74,6 +79,7 @@ UgruntGenerator.prototype.askFor = function askFor() {
 
   this.prompt(prompts, function (props) {
     this.siteName = props.siteName;
+    this.masterpageName = props.masterpageName;
     this.ignoreFileChoice = getIgnorefileChoice(props);
     this.jqueryVersion = getJqueryVersion(props);
     this.includeNormalize = props.includeNormalize;
@@ -116,6 +122,7 @@ function getJqueryVersion(props) {
 
 UgruntGenerator.prototype.app = function app() {
   this.copy('_package.json', 'package.json');
+  this.template('_ugrunt_boilerplate.master', 'masterpages/' + this.masterpageName + '.master');
   this.template('Gruntfile.js', 'Gruntfile.js');
   this.template('_bower.json', 'bower.json');
   this.copy('bowerrc', '.bowerrc');

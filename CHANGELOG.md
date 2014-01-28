@@ -1,3 +1,9 @@
+## 0.1.0 (January 28, 2014)
+
+Features: 
+  - A boilerplate masterpage is now included
+
+
 ## 0.0.2 (January 27, 2014)
 
 Features:
