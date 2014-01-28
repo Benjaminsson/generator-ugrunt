@@ -21,7 +21,7 @@ module.exports = function (grunt) {
       target: {
         // Point to the files that should be updated when
         // you run `grunt bower-install`
-        src: ['masterpages/index.html'],
+        src: ['masterpages/<%= masterpageName %>.master'],
         cwd: '.'
       }
     },
