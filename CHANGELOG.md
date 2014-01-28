@@ -1,3 +1,10 @@
+## 0.1.1 (January 28, 2014)
+
+Bugfixes:
+  - ``` grunt bower-install ``` runs without error (now references the masterpage being created)
+  - grunt-modernizr works
+
+
 ## 0.1.0 (January 28, 2014)
 
 Features: 
