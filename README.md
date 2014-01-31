@@ -62,14 +62,7 @@ If you’re using Sublime Text or Visual Studio there is good support for editor
 If not, the script will just continue.
 
 8. **Yeoman will install all the files needed for the setup.**
-If it for some reason should fail, you can run the commands yourself:<br>For manually installing Bower:
-```
-$ bower install
-```
-For manually installing Grunt:
-```
-$ npm install
-```
+If it for some reason should fail, you can run the install commands yourself.
 
 ## License
 
