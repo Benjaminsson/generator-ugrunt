@@ -20,11 +20,12 @@ describe('uGrunt generator', function () {
         }.bind(this));
     });
 
+	/* '.jshintrc', */
+	
     it('creates expected files', function (done) {
         var expected = [
             // add files you expect to exist here.
-            '.jshintrc',
-            '.editorconfig'
+            '.editorconfig',
 			['bower.json', /"name": "temp"/],
 			['package.json', /"name": "temp"/],
 			'Gruntfile.js'
