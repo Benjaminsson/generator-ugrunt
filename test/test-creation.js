@@ -26,8 +26,8 @@ describe('uGrunt generator', function () {
         var expected = [
             // add files you expect to exist here.
             '.editorconfig',
-			['bower.json', /"name": "temp"/],
-			['package.json', /"name": "temp"/],
+			'bower.json',
+			'package.json',
 			'Gruntfile.js'
         ];
 		
