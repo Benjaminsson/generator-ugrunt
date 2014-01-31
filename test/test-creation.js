@@ -5,7 +5,8 @@ var path    = require('path');
 var helpers = require('yeoman-generator').test;
 
 
-describe('ugrunt generator', function () {
+
+describe('uGrunt generator', function () {
     beforeEach(function (done) {
         helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
             if (err) {
@@ -24,11 +25,20 @@ describe('ugrunt generator', function () {
             // add files you expect to exist here.
             '.jshintrc',
             '.editorconfig'
+			['bower.json', /"name": "temp"/],
+			['package.json', /"name": "temp"/],
+			'Gruntfile.js'
         ];
-
+		
         helpers.mockPrompt(this.app, {
-            'someOption': true
+            'siteName': 'test',
+			'masterpageName': 'master',
+			'ignoreFileChoice': 'gitignore',
+			'jqueryVersion': 'jquery1',
+			'includeNormalize': true,
+			'includeEditorconfig': true
         });
+		
         this.app.options['skip-install'] = true;
         this.app.run({}, function () {
             helpers.assertFiles(expected);
