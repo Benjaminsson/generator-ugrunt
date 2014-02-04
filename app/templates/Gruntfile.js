@@ -119,7 +119,7 @@ module.exports = function (grunt) {
 
   // TASKS
   // Default task takes all the "developer files" (javascript, xslt and css) and builds them
-  grunt.registerTask('default', ['clean:all', 'useminPrepare', 'concat', 'cssmin', 'uglify', 'copy:main', 'modernizr', 'rev', 'usemin']);
+  grunt.registerTask('default', ['clean:main', 'useminPrepare', 'concat', 'cssmin', 'uglify', 'copy:main', 'modernizr', 'rev', 'usemin']);
   // The all task takes everything. That includes the media folder so it may take time. 
   grunt.registerTask('all', ['clean:all', 'useminPrepare', 'concat', 'cssmin', 'uglify', 'copy:all', 'modernizr', 'rev', 'usemin']);
 };
