@@ -1,5 +1,6 @@
-# generator-ugrunt [![Build Status](https://secure.travis-ci.org/Benjaminsson/generator-ugrunt.png?branch=master)](https://travis-ci.org/Benjaminsson/generator-ugrunt)
+# uGrunt [![Build Status](https://secure.travis-ci.org/Benjaminsson/generator-ugrunt.png?branch=master)](https://travis-ci.org/Benjaminsson/generator-ugrunt)
 
+<img align="right" height="300" src="ugrunt-logo.png">
 A [Yeoman](http://yeoman.io) generator for [Umbraco](http://umbraco.com). It will set up the following in your Umbraco project:
 
 * A boilerplate masterpage based on [h5bp](http://html5boilerplate.com/) with all the necessary build tags for Grunt and Bower.
@@ -19,7 +20,7 @@ A [Yeoman](http://yeoman.io) generator for [Umbraco](http://umbraco.com). It wil
 
 ## Getting Started
 
-Before you can run uGrunt you need to have Yeoman installed on your computer. If you need instructions on how to install Yeoman, you'll find them on [yeoman.io](http://yeoman.io/gettingstarted.html). 
+Before you can run uGrunt you need to have Yeoman installed on your computer. If you need instructions on how to install Yeoman, you'll find them on [yeoman.io](http://yeoman.io/gettingstarted.html). An indepth view on what uGrunt does can be found in [this blog post](http://www.swedishfika.com/2014/02/04/ugrunt/)
 
 
 ### Yeoman Generators
