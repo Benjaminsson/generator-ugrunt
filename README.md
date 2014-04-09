@@ -1,3 +1,4 @@
+I have put this project on hold for the moment. Using Tim Geysens [Optimus](http://our.umbraco.org/projects/developer-tools/optimus) instead. Not as advanced but suits the .NET workflow better.
 # uGrunt [![Build Status](https://secure.travis-ci.org/Benjaminsson/generator-ugrunt.png?branch=master)](https://travis-ci.org/Benjaminsson/generator-ugrunt)
 
 <img align="right" height="300" src="ugrunt-logo.png">
